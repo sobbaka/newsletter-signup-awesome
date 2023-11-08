@@ -3,24 +3,54 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#" sizes="any">
-    <link rel="icon" href="#" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon-32x32.png" sizes="any">
 
-    <title>Document</title>
-    <meta name="description" content="">
+  <title>Newsletter signup - Awesome</title>
+  <meta name="description" content="Newsletter signup. Test work from Frontend mentor - www.frontendmentor.io">
 
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+  <meta property="og:type" content="webpage">
+  <meta property="og:url" content="/">
+  <meta property="og:image" content="./images/illustration-sign-up-desktop.svg">
 
-    <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="#">
 </head>
 
 <body>
+  <div class="container">
+    <div class="modal">
+      <div class="modal-signup modal">
+        <div class="modal-signup__content">
+          <h1 class="modal__title">Stay updated!</h1>
+          <p class="modal__description">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="modal__list">
+            <li class="modal__item">Product discovery and building what matters</li>
+            <li class="modal__item">Measuring to ensure updates are a success</li>
+            <li class="modal__item">And much more!</li>
+          </ul>
+          <form action="#" class="modal-signup__form form">
+            <label for="form__input" class="form__label">Email address</label>
+            <input type="email" name="email" id="form__input" class="form__input" required
+              placeholder="email@company.com">
+            <button type="submit" class="form__submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <picture class="modal-signup__illustration">
+          <source media="(max-width: 599px)" srcset="./images/illustration-sign-up-mobile.svg" />
+          <source media="(min-width: 600px)" srcset="./images/illustration-sign-up-desktop.svg" />
+          <img src="./images/illustration-sign-up-desktop.svg" alt="Chris standing up holding his daughter Elva" />
+        </picture>
+      </div>
 
+      <div class="modal-success modal">
+        <h2 class="modal__title">Thanks for subscribing!</h2>
+        <p class="modal__description">A confirmation email has been sent to ash@loremcompany.com. Please open it
+          and click the button inside to confirm your subscription.</p>
+        <button class="form__submit">Dismiss message</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
