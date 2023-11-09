@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #36384D;
+  color: #242742;
+  --white: #fff;
+  --dark: #242742;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.modal {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__modal {
+  background-color: var(--white);
+  border-radius: 36px;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+}
+
+.modal-signup {
+  max-width: 928px;
+  max-height: 641px;
+  display: flex;
+}
+
+.modal-signup__content {
+  padding: 97px 64px;
+}
+
+.modal__title {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.modal__description {
+  line-height: 150%;
+  padding: 24px 0;
+}
+
+.modal__list {}
+
+.modal__item {
+  line-height: 150%;
+  position: relative;
+  padding-left: 37px;
+}
+
+.modal__item:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.modal__item::before {
+  content: url(./images/icon-list.svg);
+  position: absolute;
+  left: -1px;
+}
+
+.modal-signup__form {
+  padding-top: 40px;
+}
+
+.form {}
+
+.form__label {
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 8px;
+}
+
+.form__input {
+  font-size: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  padding: 16px 0 16px 24px;
+  margin-bottom: 24px;
+}
+
+.form__button {
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  padding: 16px;
+}
+
+.modal-signup__illustration {
+  padding: 24px 24px 24px 0;
+}
+
+.modal-success {
+  display: none;
+  max-width: 504px;
+}
