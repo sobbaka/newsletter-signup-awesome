@@ -33,6 +33,7 @@
   max-width: 928px;
   max-height: 641px;
   display: flex;
+  overflow: hidden;
 }
 
 .modal-signup__content {
@@ -101,6 +102,22 @@
   padding: 16px;
 }
 
+.form__button:focus,
+.form__button:hover {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  border-radius: 8px;
+  background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  padding: 16px;
+}
+
 .modal-signup__illustration {
   padding: 24px 24px 24px 0;
 }
@@ -108,4 +125,32 @@
 .modal-success {
   display: none;
   max-width: 504px;
+}
+
+@media (max-width: 900px) {
+  .modal-signup__content {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .modal-signup__content {
+    padding: 40px 20px;
+    display: block;
+  }
+
+  .modal-signup {
+    max-height: 500vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .modal-signup__illustration {
+    padding: 0;
+  }
+
 }
