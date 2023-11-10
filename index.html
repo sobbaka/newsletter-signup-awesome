@@ -31,8 +31,12 @@
           <li class="modal__item">And much more!</li>
         </ul>
         <form action="#" class="modal-signup__form form">
-          <label for="form__input" class="form__label">Email address</label>
-          <input type="email" name="email" id="form__input" class="form__input" required
+          <div class="form__header">
+            <label for="form__input" class="form__label">Email address</label>
+            <span class="form__validation-error">Valid email required</span>
+          </div>
+
+          <input type="email" name="email" id="form__input" class="form__input form__input--invalid" required
             placeholder="email@company.com">
           <button type="submit" class="form__button">Subscribe to monthly newsletter</button>
         </form>

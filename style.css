@@ -9,6 +9,7 @@
   color: #242742;
   --white: #fff;
   --dark: #242742;
+  --red: #FF6155;
 }
 
 * {
@@ -81,13 +82,44 @@
   padding-bottom: 8px;
 }
 
+.form__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__validation-error {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--red);
+  display: block;
+  padding-bottom: 8px;
+}
+
 .form__input {
   font-size: 16px;
+  font-feature-settings: 'clig' off, 'liga' off;
   width: 100%;
   border-radius: 8px;
   border: 1px solid rgba(25, 24, 43, 0.25);
   padding: 16px 0 16px 24px;
   margin-bottom: 24px;
+}
+
+.form__input--invalid {
+  color: var(--red);
+  border: 1px solid var(--red);
+  background: rgba(255, 97, 85, 0.15);
+}
+
+.form__input--invalid:focus {
+  color: var(--red);
+  border: 1px solid var(--red);
+  background: rgba(255, 97, 85, 0.15);
+}
+
+.form__input--invalid::placeholder {
+  color: var(--red);
+  opacity: 1;
 }
 
 .form__button {
